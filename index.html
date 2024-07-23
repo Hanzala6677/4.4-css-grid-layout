@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+</head>
+<style>
+    body{
+        background-image: url(https://t4.ftcdn.net/jpg/07/08/06/81/240_F_708068192_lfAxM3lk2QRnm9vJciHVOEDsXpdVHunS.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    h1{
+        background: #0d1b2a;
+        position: relative;
+        color:whitesmoke;
+        text-align: center;
+
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: 100px 150px 2fr;
+        height: 70vh;
+        width: 70vw;
+  justify-content: center;
+  margin-left: 15%;
+        
+    }
+    .titles1{
+        background-color:#001219;
+    }
+    .titles2{
+        background-color: #005f73;
+    }
+    .titles3{
+        background-color: #003049;
+    }
+    .titles4{
+        background-color: #343a40;
+    }
+    .titles5{
+        background-color: #022b3a;
+        grid-row: 2/4;
+    }
+    .titles6{
+        background-color: #001d3d;
+        grid-column: 2/4;
+    }
+    .titles7{
+        background-color: #240046;
+    } .titles8{
+        background-color: #6930c3;
+        grid-row: 2/-1;
+        grid-column: 4/-2;
+    } .titles9{
+        background-color: #3a0ca3;
+        grid-row: 3/3;
+    }
+</style>
+<body>
+    <img src="" alt="">
+    <h1>CSS Grid</h1>
+<div class="container">
+    <div class="titles titles1">FIRST</div>
+    <div class="titles titles2">SECOND</div>
+    <div class="titles titles3">THRID</div>
+    <div class="titles titles4">FOUR</div>
+    <div class="titles titles5">FIVE</div>
+    <div class="titles titles6">SIX</div>
+    <div class="titles titles7">SEVEN</div>
+    <div class="titles titles8">EIGHT</div>
+    <div class="titles titles9">NINE</div>
+</div>
+</body>
+</html>
